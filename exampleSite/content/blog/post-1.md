@@ -1,29 +1,19 @@
 ---
-title: "My first PCB"
-date: 2020-11-21T10:07:47+06:00
-draft: false
-
-# post thumb
-image: "images/featured-post/post-lasertrip.jpg"
-
-# meta description
-description: "this is meta description"
-
-# taxonomies
+title: My first PCB
+date: 2020-11-21T10:07:47.000+06:00
+image: images/featured-post/post-lasertrip.jpg
+description: this is meta description
 categories:
-  - "Analog Electronics"
+- Analog Electronics
 tags:
-  - "555 timer"
-  - "PCB"
+- 555 timer
+- PCB
+type: featured
 
-# post type
-type: "featured"
 ---
-
-
 <hr>
 
-The circuit board was a simple laser tripwire that I made when I was 15 years old. It used two NE555 timers and a light dependent resistor with complimentary components to make a buzzer beep when the path between the laser diode and the light dependent resistor. I was very proud of this board and brought the JLCPCB box with all the boards to show to my classmates. It was a very surreal experience seeing something that I designed, become manufactured and delivered to my house. The design was made over the course of about a month since I was paranoid of screwing something up when making the final board. While the board worked exactly how I designed it to, there were 2 main flaws. You can see a demo of it here.
+The circuit board was a simple laser tripwire that I made when I was 15 years old. It used two NE555 timers and a light dependent resistor with complimentary components to make a buzzer beep when the path between the laser diode and the light dependent resistor. One of the 555 timers is in bistable mode whilst the other one was in astable mode. I was very proud of this board and brought the JLCPCB box with all the boards to show to my classmates. It was a very surreal experience seeing something that I designed, become manufactured and delivered to my house. The design was made over the course of about a month since I was paranoid of screwing something up when making the final board. While the board worked exactly how I designed it to, there were 2 main flaws. You can see a demo of it here.
 
 <hr>
 
@@ -37,15 +27,11 @@ The two flaws with the design were thankfully inconsequential and easy to get ar
 
 <hr>
 
-
 ##### If you would like to buy one of these as a kit
 
-You can do so on my tindie store [right here]. It's gonna cost you 15 dollars without shipping. The shipping will be done through USPS.
-
-[right here]: https://www.tindie.com/stores/varunsreedharan/
+You can do so on my tindie store [right here](https://www.tindie.com/stores/varunsreedharan/). It's gonna cost you 15 dollars without shipping. The shipping will be done through USPS.
 
 <hr>
-
 
 ##### A completed board
 
