@@ -5,4 +5,4 @@ image: images/author.png
 description: this is meta description
 
 ---
-My name is Varun Sreedharan. gwa gwa
+My name is Varun Sreedharan. gwa gwa. I am currently a 16 year old high school junior.
