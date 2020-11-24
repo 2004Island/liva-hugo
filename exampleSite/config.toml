@@ -1,141 +1,89 @@
-######################## default configuration ####################
-baseURL = "https://examplesite.com"
-languageCode = "en-us"
-title = "Liva | Personal blog template"
-theme = "liva-hugo"
-summaryLength = "10"
-paginate = 6
+baseURL = "https://varunengineering.netlify.com"
 disqusShortname = ""
-
+languageCode = "en-us"
+paginate = 6
+summaryLength = "10"
+theme = "liva-hugo"
+title = "varunscircuits"
+[[menu.footer]]
+URL = "about"
+name = "About"
+weight = 1
+[[menu.footer]]
+URL = "blog"
+name = "Post"
+weight = 2
+[[menu.footer]]
+URL = "contact"
+name = "Contact"
+weight = 3
+[[menu.main]]
+URL = "about"
+name = "About"
+weight = 1
+[[menu.main]]
+URL = "blog"
+name = "Post"
+weight = 2
+[[menu.main]]
+URL = "contact"
+name = "Contact"
+weight = 3
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
-
-############################# Plugins ##############################
-[params.plugins]
-
-  # CSS Plugins
-  [[params.plugins.css]]
-  URL = "plugins/bootstrap/bootstrap.min.css"
-  [[params.plugins.css]]
-  URL = "plugins/slick/slick.css"
-  [[params.plugins.css]]
-  URL = "plugins/themify-icons/themify-icons.css"
-  [[params.plugins.css]]
-  URL = "plugins/venobox/venobox.css"
-
-  # JS Plugins
-  [[params.plugins.js]]
-  URL = "plugins/jQuery/jquery.min.js"
-  [[params.plugins.js]]
-  URL = "plugins/bootstrap/bootstrap.min.js"
-  [[params.plugins.js]]
-  URL = "plugins/slick/slick.min.js"
-  [[params.plugins.js]]
-  URL = "plugins/venobox/venobox.min.js"
-  [[params.plugins.js]]
-  URL = "plugins/search/fuse.min.js"
-  [[params.plugins.js]]
-  URL = "plugins/search/mark.js"
-  [[params.plugins.js]]
-  URL = "plugins/search/search.js"
-
-
-############################## navigation ###############################
-[menu]
-
-  # main menu
-  [[menu.main]]
-  name = "About"
-  URL = "about"
-  weight = 1
-
-  [[menu.main]]
-  name = "Post"
-  URL = "blog"
-  weight = 2
-
-  [[menu.main]]
-  name = "Contact"
-  URL = "contact"
-  weight = 3
-
-  # footer menu
-  [[menu.footer]]
-  name = "About"
-  URL = "about"
-  weight = 1
-
-  [[menu.footer]]
-  name = "Post"
-  URL = "blog"
-  weight = 2
-
-  [[menu.footer]]
-  name = "Contact"
-  URL = "contact"
-  weight = 3
-
-
-#################### default parameters ################################
+home = ["HTML", "RSS", "JSON"]
 [params]
-logo = "images/logo.png"
-home = "Home"
-# Meta data
+author = "Varun Sreedharan"
+copyright = ""
 description = "This is meta description"
-author = "Themefisher"
-# Google Analitycs
+email = "varunsreedharan2@gmail.com"
 googleAnalitycsID = "Your ID"
-# Contact Information
-mobile = "0124857985320"
-email = "demo@email.com"
-location = "Dhaka, Bangladedsh"
-# copyright
-copyright = "| copyright &copy; 2020 [Themefisher](https://themefisher.com) All Rights Reserved |"
-
-  # Preloader
-  [params.preloader]
-  enable = true
-  preloader = "" # use .png , .svg or .gif format
-
-  # search
-  [params.search]
-  enable = true
-
-############################ news letter ########################
-[params.newsletter]
-enable = true
-title = "Join Our Newsletter"
-content = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero"
-
-
-# cookies
+home = "Home"
+location = "Pacifica California"
+logo = "images/logo.png"
+mobile = "don't call me"
 [params.cookies]
-enable = true
+enable = false
 expire_days = 2
-
-
-############################# social site ########################
+[params.newsletter]
+content = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero"
+enable = false
+title = "Join Our Newsletter"
+[[params.plugins.css]]
+URL = "plugins/bootstrap/bootstrap.min.css"
+[[params.plugins.css]]
+URL = "plugins/slick/slick.css"
+[[params.plugins.css]]
+URL = "plugins/themify-icons/themify-icons.css"
+[[params.plugins.css]]
+URL = "plugins/venobox/venobox.css"
+[[params.plugins.js]]
+URL = "plugins/jQuery/jquery.min.js"
+[[params.plugins.js]]
+URL = "plugins/bootstrap/bootstrap.min.js"
+[[params.plugins.js]]
+URL = "plugins/slick/slick.min.js"
+[[params.plugins.js]]
+URL = "plugins/venobox/venobox.min.js"
+[[params.plugins.js]]
+URL = "plugins/search/fuse.min.js"
+[[params.plugins.js]]
+URL = "plugins/search/mark.js"
+[[params.plugins.js]]
+URL = "plugins/search/search.js"
+[params.preloader]
+enable = true
+preloader = ""
+[params.search]
+enable = true
 [[params.social]]
-title = "facebook"
-icon = "ti-facebook" # themify icon : https://themify.me/themify-icons
-link = "#"
-
+icon = "ti-youtube"
+link = "https://www.youtube.com/channel/UCiuG-d7alIxakEMjBizIhxg?view_as=subscriber"
+title = "youtube"
 [[params.social]]
-title = "twitter"
-icon = "ti-twitter-alt" # themify icon : https://themify.me/themify-icons
-link = "#"
-
-[[params.social]]
+icon = "ti-instagram"
+link = "https://www.instagram.com/varunscircuits/"
 title = "instagram"
-icon = "ti-instagram" # themify icon : https://themify.me/themify-icons
-link = "#"
-
 [[params.social]]
-title = "github"
-icon = "ti-github" # themify icon : https://themify.me/themify-icons
+icon = "ti-linkedin"
 link = "#"
-
-[[params.social]]
 title = "linkedin"
-icon = "ti-linkedin" # themify icon : https://themify.me/themify-icons
-link = "#"
