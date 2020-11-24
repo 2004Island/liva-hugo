@@ -39,7 +39,7 @@ email = "varunsreedharan2@gmail.com"
 googleAnalitycsID = "Your ID"
 home = "Home"
 location = "Pacifica California"
-logo = "images/logo.png"
+logo = "images/elephant.png"
 mobile = "don't call me"
 [params.cookies]
 enable = false
