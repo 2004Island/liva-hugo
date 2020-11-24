@@ -2,7 +2,7 @@
 title: My first PCB
 date: 2020-11-21T10:07:47.000+06:00
 image: images/featured-post/post-lasertrip.jpg
-description: this is meta description
+description: My first PCB
 categories:
 - Analog Electronics
 tags:
