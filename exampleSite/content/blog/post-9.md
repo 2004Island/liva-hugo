@@ -1,167 +1,54 @@
 ---
-title: "How To Use Checklists To Improve Your UX"
-date: 2019-10-29T10:07:47+06:00
+title: "My first PCB"
+date: 2020-11-21T10:07:47+06:00
 draft: false
 
 # post thumb
-image: "images/post/post-6.jpg"
+image: "images/featured-post/post-lasertrip.jpg"
 
 # meta description
 description: "this is meta description"
 
 # taxonomies
-categories: 
-  - "Python"
+categories:
+  - "Analog Electronics"
 tags:
-  - "Photos"
-  - "Game"
-  - "HTML"
-  - "Python"
-  - "New"
+  - "555 timer"
+  - "PCB"
 
 # post type
-type: "post"
+type: "featured"
 ---
 
-# Heading 1
-## Heading 2
-### Heading 3
-#### Heading 4
-##### Heading 5
-###### Heading 6
 
 <hr>
 
-##### Emphasis
-
-Emphasis, aka italics, with *asterisks* or _underscores_.
-
-Strong emphasis, aka bold, with **asterisks** or __underscores__.
-
-Combined emphasis with **asterisks and _underscores_**.
-
-Strikethrough uses two tildes. ~~Scratch this.~~
+The circuit board was a simple laser tripwire that I made when I was 15 years old. It used two NE555 timers and a light dependent resistor with complimentary components to make a buzzer beep when the path between the laser diode and the light dependent resistor. I was very proud of this board and brought the JLCPCB box with all the boards to show to my classmates. It was a very surreal experience seeing something that I designed, become manufactured and delivered to my house. The design was made over the course of about a month since I was paranoid of screwing something up when making the final board. While the board worked exactly how I designed it to, there were 2 main flaws. You can see a demo of it here.
 
 <hr>
 
-##### Link
-[I'm an inline-style link](https://www.google.com)
-
-[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
-
-[I'm a reference-style link][Arbitrary case-insensitive reference text]
-
-[I'm a relative reference to a repository file](../blob/master/LICENSE)
-
-[You can use numbers for reference-style link definitions][1]
-
-Or leave it empty and use the [link text itself].
-
-URLs and URLs in angle brackets will automatically get turned into links. 
-http://www.example.com or <http://www.example.com> and sometimes 
-example.com (but not on Github, for example).
-
-Some text to show that the reference links can follow later.
-
-[arbitrary case-insensitive reference text]: https://www.mozilla.org
-[1]: http://slashdot.org
-[link text itself]: http://www.reddit.com
+{{< youtube dAI8Xn476gI >}}
 
 <hr>
 
-##### Paragraph
+##### The flaws
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim maxime corporis cumque totam aliquid nam sint inventore optio modi neque laborum officiis necessitatibus, facilis placeat pariatur! Voluptatem, sed harum pariatur adipisci voluptates voluptatum cumque, porro sint minima similique magni perferendis fuga! Optio vel ipsum excepturi tempore reiciendis id quidem? Vel in, doloribus debitis nesciunt fugit sequi magnam accusantium modi neque quis, vitae velit, pariatur harum autem a! Velit impedit atque maiores animi possimus asperiores natus repellendus excepturi sint architecto eligendi non, omnis nihil. Facilis, doloremque illum. Fugit optio laborum minus debitis natus illo perspiciatis corporis voluptatum rerum laboriosam.
-
-<hr>
-
-##### List
-
-1. List item
-2. List item
-3. List item
-4. List item
-5. List item
-
-##### Unordered List
-
-* List item
-* List item
-* List item
-* List item
-* List item
+The two flaws with the design were thankfully inconsequential and easy to get around. The first flaw was a purely cosmetic one, on the silk screen there was a resistor that was connected to an onboard LED that lights up when the tripwire is broken. The resistor was marked with the number 350. Nobody manufactures 350Ω resistors. I don't know what's more surprising about this, my own ignorance to not even check the correct value of the resistor I used in my circuit or the fact that 350Ω resistors aren't even made. The other flaw was a component choice. For the buzzer I chose a default buzzer in the EasyEDA parts library. Apparently EasyEDA decided to choose a buzzer with a footprint that 99% of all through hole piezo buzzers don't even have. I looked at the LCSC listing for the part I chose in my board. There were 250 units. Not 250,000, not 25,000, no. 250. There are more people in my senior and junior classes than there are available stock of this "default" buzzer. To make matters worse I couldn't even find this part on Aliexpress or Amazon. Eventually I found a buzzer with the same pin spacing as the buzzer I chose for the board.
 
 <hr>
 
-##### Code and Syntax Highlighting
 
-Inline `code` has `back-ticks around` it.
+##### If you would like to buy one of these as a kit
 
-```javascript
-var s = "JavaScript syntax highlighting";
-alert(s);
-```
- 
-```python
-s = "Python syntax highlighting"
-print s
-```
- 
-```
-No language indicated, so no syntax highlighting. 
-But let's throw in a <b>tag</b>.
-```
+You can do so on my tindie store [right here]. It's gonna cost you 15 dollars without shipping. The shipping will be done through USPS.
+
+[right here]: https://www.tindie.com/stores/varunsreedharan/
 
 <hr>
 
-##### Blockquote
 
-> This is a blockquote example.
+##### A completed board
 
-<hr>
-
-##### Inline HTML
-
-You can also use raw HTML in your Markdown, and it'll mostly work pretty well.
-
-<dl>
-  <dt>Definition list</dt>
-  <dd>Is something people use sometimes.</dd>
-
-  <dt>Markdown in HTML</dt>
-  <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
-</dl>
-
+![image](../../images/post/IMG_4348.JPG)
 
 <hr>
-
-##### Tables
-
-Colons can be used to align columns.
-
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
-
-There must be at least 3 dashes separating each header cell.
-The outer pipes (|) are optional, and you don't need to make the 
-raw Markdown line up prettily. You can also use inline Markdown.
-
-Markdown | Less | Pretty
---- | --- | ---
-*Still* | `renders` | **nicely**
-1 | 2 | 3
-
-<hr>
-
-##### Image
-
-![image](../../images/post/post-1.jpg)
-
-<hr>
-
-##### Youtube video
-
-{{< youtube C0DPdy98e4c >}}
