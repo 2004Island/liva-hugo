@@ -5,4 +5,4 @@ image: images/author.jpg
 description: Who is Varun?
 
 ---
-My name is Varun Sreedharan. I am currently a 16 year old high school junior. OHS 2022 gwa gwa
+My name is Varun Sreedharan. I am currently a 16 year old high school junior. gwa gwa
