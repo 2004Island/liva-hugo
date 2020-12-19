@@ -83,7 +83,3 @@ title = "youtube"
 icon = "ti-instagram"
 link = "https://www.instagram.com/varunscircuits/"
 title = "instagram"
-[[params.social]]
-icon = "ti-shopping-cart"
-link = "https://www.tindie.com/stores/varunsreedharan/"
-title = "tindie store"
